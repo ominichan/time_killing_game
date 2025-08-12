@@ -1,0 +1,23 @@
+<div class="w-150 mx-auto my-5 py-5 border border-blue-400 rounded-md">
+  <p class="font-semibold text-2xl text-center underline">
+    数字当てゲーム
+  </p>
+
+  <div class="mt-5 flex flex-col items-center justify-center">
+    <button id="start" class="bg-blue-400 text-white p-2 rounded-md cursor-pointer">ゲームスタート</button>
+
+    <div id="game-area" class="mt-5" style="display: none;">
+      <h3 class="mt-4">試行回数： <span id="attempts">0</span></h3>
+      <div class="flex space-x-2">
+        <input type="number" step="1" id="guess" class="p-1 text-center border border-black rounded-md" placeholder="3桁の数字を入力">
+        <button id="submit" type="button" class="bg-blue-400 text-white p-1 rounded-md cursor-pointer">判定</button>
+      </div>
+      <div class="mt-5 p-2 border-2 border-blue-400 rounded-md">
+        <h3 class="mt-2 font-semibold text-center">判定結果</h3>
+        <div class="flex items-center justify-center w-full">
+          <ul id="history" class="pb-2"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
