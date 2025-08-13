@@ -4,7 +4,21 @@
   </p>
 
   <div class="mt-5 flex flex-col items-center justify-center">
-    <button id="start" class="bg-blue-400 text-white p-2 rounded-md cursor-pointer">ゲームスタート</button>
+    <div class="flex space-x-1">
+      <button id="start" class="bg-blue-400 text-white p-2 rounded-md cursor-pointer">ゲームスタート</button>
+      <button id="toggle_button" class="bg-blue-400 text-white p-2 rounded-md cursor-pointer">ルール</button>
+    </div>
+
+    <div id="menu" class="hidden my-5 p-2 border-2 border-blue-500 rounded-md text-sm">
+      <p>①スタートを押すと異なる数字を組み合わせた3桁が自動生成されます。</p>
+      <p>　（同じ数字を2つ以上用いたものは生成されません）</p>
+      <p>②フォームに3桁の数字を打ち込むと、HITとBLOWを用いたヒントが返ってきます。</p>
+      <p>③ヒントを元に生成された3桁の数字を当てるとクリア！5回以内を目指そう！</p>
+      <p>　</p>
+      <p>　HIT・・・桁と数字が合っている</p>
+      <p>　BLOW・・・桁は違うが数字は合っている</p>
+      <p>（例）2HIT 1BLOW = 数字・位置ともに正しい数字が２つ、位置が違う数字が１つ</p>
+    </div>
 
     <div id="game-area" class="mt-5" style="display: none;">
       <h3 class="mt-4">試行回数： <span id="attempts">0</span></h3>
