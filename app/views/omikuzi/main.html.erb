@@ -1,0 +1,13 @@
+<div class="w-100 mx-auto my-5 py-5 border border-blue-400 rounded-md">
+  <p class="font-semibold text-2xl text-center underline">
+    おみくじ
+  </p>
+
+  <div class="flex flex-col items-center justify-center">
+      <%= button_to "おみくじを引く", main_omikuzi_path, data: { turbo: false }, method: :post, class: "mt-4 px-4 py-2 bg-blue-400 text-white rounded cursor-pointer hover:bg-blue-500" %>
+    <% if @result %>
+      <p class="mt-6 text-xl">今日の運勢は</p>
+      <p class="mt-1 text-2xl font-bold"><%= @result %></p>
+    <% end %>
+  </div>
+</div>

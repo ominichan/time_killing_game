@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root "static_pages#top"
 
   get "number_guessing/main", to: "number_guessing#main", as: "main_number_guessing"
+  get "omikuzi/main", to: "omikuzi#main", as: "main_omikuzi"
+  post "omikuzi/main", to: "omikuzi#main"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
