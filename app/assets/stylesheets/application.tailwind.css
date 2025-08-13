@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  visibility: hidden;
+}
+
+.dropdown:hover .menu {
+  visibility: visible;
+}

@@ -57,3 +57,10 @@ document.addEventListener("turbo:load", () => {
       return { hits, blows };
     }
   });
+
+  const btn = document.getElementById("toggle_button");
+  const menu = document.getElementById("menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle('hidden');
+  });
